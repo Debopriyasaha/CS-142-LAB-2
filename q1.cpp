@@ -57,8 +57,7 @@ class LinkedList{
 			i++;
 			current = current->next;
 			if(current==NULL){
-				cout << "This position has not yet been created." << endl;
-				cout << "Insert function might help you in this case." << endl;
+				cout << "This position is not there." << endl;
 				return;
 			}
 		}
@@ -84,18 +83,18 @@ class LinkedList{
 	
 		// Reach the place before the pos
 		Node* current = head;
-		int i =1;
-		while(i<pos-1){
-			i++;
+		int a =1;
+		while(a<pos-1){
+			a++;
 			current = current->next;
 			
 		}
 
 		// Reach the place at the pos
 		Node* temp = head;
-		int j =1;
-		while(j<pos){
-			j++;
+		int b =1;
+		while(b<pos){
+			b++;
 			temp = temp->next;
 			if(temp==NULL){
 				cout << "This position is not." << endl;
